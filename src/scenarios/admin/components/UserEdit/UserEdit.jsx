@@ -21,7 +21,6 @@ class UserEdit extends React.Component {
       .then(function (response) {
         response.json()
           .then(function(data){
-            console.log(data);
             self.setState({user:data});
           });
       });
@@ -40,9 +39,7 @@ class UserEdit extends React.Component {
     loginModule
       .updateUserRole(this.state.user);
      /* .then(function(response){
-        conaole.log(response);
       });*/
-    console.log(this.state.user);
   }
 
   render() {
@@ -94,4 +91,5 @@ class UserEdit extends React.Component {
     );
   }
 }
-module.exports = UserEdit;
+
+export default UserEdit;

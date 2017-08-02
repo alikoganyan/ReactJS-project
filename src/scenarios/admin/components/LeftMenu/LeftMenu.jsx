@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
+import PropTypes from 'prop-types';
+
 
 class LeftMenu extends React.Component {
   constructor(props) {
@@ -11,7 +13,7 @@ class LeftMenu extends React.Component {
       <div className="collapse navbar-collapse navbar-ex1-collapse">
         <ul className="nav navbar-nav side-nav">
           <li className="active">
-            <Link href="index.html"><i className="fa fa-fw fa-dashboard"></i> Dashboard</Link>
+            <Link href="/admin/test-redux"><i className="fa fa-fw fa-dashboard"></i> Dashboard</Link>
           </li>
           <li>
             <Link to="/admin/users"><i className="fa fa-user fa-fw"></i> {"Users"} </Link>
@@ -51,4 +53,9 @@ class LeftMenu extends React.Component {
   }
 }
 
-module.exports = LeftMenu;
+LeftMenu.propTypes = {
+
+};
+
+export default LeftMenu;
+

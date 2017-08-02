@@ -43,7 +43,6 @@ export function getUsers(){
   })
 }
 export function getUserById(id){
-  console.log(id);
   return fetch ('http://owl.yii.backend.local/api/get-user-by-id?id=' + id,{
     method : 'GET',
     headers: {
@@ -67,8 +66,7 @@ export function updateUserRole(user){
   for (let key in user) {
     query += encodeURIComponent(key)+"="+encodeURIComponent(user[key])+"&";
   }
-  console.log(query);
-  return fetch('http://owl.yii.backend.local/api/update-role?XDEBUG_SESSION_START=17268', {
+  return fetch('http://owl.yii.backend.local/api/update-role', {
     method: 'POST',
     headers: {
        //"Accept" : "application/json; charset=utf-8",

@@ -15,13 +15,11 @@ class Navbar extends React.Component {
           if(data.action === true){
             browserHistory.push('/login');
           }
-          console.log(data);
         });
       });
   }
   render() {
     const { user } = this.props;
-    console.log(user);
     return (
       <ul className="nav navbar-right top-nav">
         <li className="dropdown">

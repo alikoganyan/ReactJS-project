@@ -12,7 +12,6 @@ require("./Login.css");
       password: '',
       rememberMe : 0
     };
-    console.log(this.state);
   }
    componentWillMount(){
      this.isAuthAdmin();

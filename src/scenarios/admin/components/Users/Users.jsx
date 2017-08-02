@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router'
 import * as loginModule from "../../../../actions/login-module.js"
 import './Users.css'
+import PropTypes from 'prop-types';
 
 
 function UsersList(props) {
@@ -39,7 +40,6 @@ class Users extends React.Component{
       .then(function (response) {
         response.json().then(function(data){
           self.setState({users : data});
-          console.log(data);
         })
       })
   }
@@ -88,5 +88,7 @@ class Users extends React.Component{
     );
   }
 }
+Users.propTypes = {
 
-module.exports = Users;
+};
+export default Users;

@@ -1,5 +1,7 @@
 import React  from 'react'
 import {Link} from 'react-router'
+import PropTypes from 'prop-types';
+
 
 class App extends React.Component {
   render() {
@@ -23,4 +25,7 @@ class App extends React.Component {
     )
   }
 }
-module.exports = App;
+App.propTypes = {
+
+};
+export default App;

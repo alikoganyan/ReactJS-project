@@ -19,7 +19,10 @@ import  AdminHome  from "./scenarios/admin/Home.jsx"
 import  Users  from "./scenarios/admin/components/Users/Users.jsx"
 import  UserEdit  from "./scenarios/admin/components/UserEdit/UserEdit.jsx"
 import  Invite  from "./scenarios/admin/components/Invite/Invite.jsx"
+import  TestRedux  from "./scenarios/admin/components/TestRedux/TestRedux.jsx"
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import PropTypes from 'prop-types';
+
 
  // import { HashRouter } from 'react-router-dom'
 // import { Route, IndexRoute } from 'react-router'
@@ -38,6 +41,7 @@ ReactDOM.render(
       <Route path={'users'} component={ Users } />
       <Route path={'user-edit/:userId'} component={ UserEdit } />
       <Route path={'user-invite'} component={ Invite } />
+      <Route path={'test-redux'} component={ TestRedux } />
     </Route>
 
   </Router>,

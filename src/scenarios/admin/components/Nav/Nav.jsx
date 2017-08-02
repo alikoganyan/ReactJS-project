@@ -1,4 +1,5 @@
 import React  from 'react'
+import PropTypes from 'prop-types'
 import NavbarHeader from '../NavbarHeader/NavbarHeader.jsx'
 import Navbar from '../Navbar/Navbar.jsx'
 import LeftMenu from '../LeftMenu/LeftMenu.jsx'
@@ -12,7 +13,6 @@ class Nav extends React.Component{
   }
   render(){
     const { user  }  = this.props;
-    console.log(user);
     return(
       <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <NavbarHeader />

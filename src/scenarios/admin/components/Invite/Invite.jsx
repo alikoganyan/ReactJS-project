@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router'
 import * as loginModule from "../../../../actions/login-module.js"
 import './Invite.css'
+import PropTypes from 'prop-types'
+
 
 class Invite extends React.Component{
   constructor(props){
@@ -58,5 +60,8 @@ class Invite extends React.Component{
   }
 }
 
+Invite.propTypes = {
+
+};
 module.exports = Invite;
 
