@@ -5,10 +5,10 @@ class PostList extends React.Component {
     super(props);
   }
   render() {
-    const { postList } = this.props;
+    const { tracks } = this.props;
     return(
         <div>
-          <ul> { postList.map((item, index) => <li key={index}>{item}</li>) }</ul>
+          <ul> { tracks.map((item, index) => <li key={item.id}>{item.name}</li>) }</ul>
         </div>
     )
   }

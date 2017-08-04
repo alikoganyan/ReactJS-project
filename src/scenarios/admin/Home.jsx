@@ -34,7 +34,7 @@ class Home extends React.Component{
     }).then(function(data){
       self.setState({user:data});
     }).catch(function(error){
-      console.error(error);
+      //console.error(error);
       //browserHistory.push('/login');
     });
   }
